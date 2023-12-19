@@ -4,8 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Choose Your Cuisine</title>
-  <link rel="stylesheet" href="public/css/styles.css">
-  <script src="public/js/script.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js"></script>
+  <script src="/js/googlemap.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
+  <script>
+   window.onload = function() {
+  
+    };
+
+  </script>
 </head>
 <body>
 
@@ -13,11 +22,18 @@
     <h1>Choose Your Cuisine</h1>
   </header>
 
+<div class="container">
   <select id="cuisineSelect" onchange="displayResult()">
     <option value="mexican">Mexican</option>
     <option value="chinese">Chinese</option>
     <option value="italian">Italian</option>
   </select>
+  
+  <button id="getLocationBtn">Get My Location</button>
+  
+  <div id="map"></div>
+  
+</div>
 
   <div id="result">Your choice will appear here</div>
 
