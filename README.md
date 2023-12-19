@@ -1,5 +1,5 @@
 # FoodRandom
-Picks food for you based on location data input
+Picks food for you based on location data input, something to keep me learning
 
 Goals:
 1) self host
